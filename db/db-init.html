@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script src="../js/jquery/jquery-3.1.1.min.js"></script>
+<script src="../js/jquery/jquery.md5.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var u_admin = {};
+        u_admin.id = '1001';
+        u_admin.userid = 'king';
+        u_admin.pwd = '123456';
+        u_admin.pwdmd5 = $.md5('123456');
+        u_admin.name = 'God king';
+        u_admin.level = 'admin';
+        u_admin.reserved = '1';
+        localStorage.setItem(u_admin.id, JSON.stringify(u_admin));
+    })
+</script>
+</html>

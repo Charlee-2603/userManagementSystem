@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5 + CSS 3 + JS</title>
+    <script type="text/javascript" src="../js/jquery/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery/jquery.md5.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+</head>
+<body>
+<!-- 添加文档主体内容 -->
+<header>
+    <nav>HTML 5 + CSS 3 + JS -- 用户信息管理系统</nav>
+</header>
+<hr>
+<form action="frm-login" onsubmit="return on_login_submit()">
+    <table cellspacing="8" cellpadding="8" style="border-collapse: collapse">
+        <caption>登录系统</caption>
+        <tr>
+            <td class="td-right">
+                用户ID:
+            </td>
+            <td>
+                <input type="text" id="userid" onblur="on_userid_blur(this.id);" />
+            </td>
+            <td class="td-right">
+                <span id="id-span-userid"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                密码:
+            </td>
+            <td>
+                <input type="password" id="password" onblur="on_pwd_blur(this.id);" />
+            </td>
+            <td class="td-right">
+                <span id="id-span-pwd"></span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="td-right">
+                <button type="submit" id="id-submit" disabled="disabled">登录</button>
+            </td>
+            <td class="td-right">
+                <a href="reg.html">新用户注册</a>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

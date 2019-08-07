@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5 + CSS 3 + JS</title>
+    <script type="text/javascript" src="../js/jquery/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery/jquery.md5.js"></script>
+    <script type="text/javascript" src="../js/new.js"></script>
+</head>
+<body>
+<header>
+        <span id="id-span-login" class="login">
+            管理员：&nbsp;
+        </span>
+    <nav>HTML 5 + CSS 3 + JS -- 用户信息管理系统（管理员） - 新增</nav>
+</header>
+<hr>
+<form name="frm-login" onsubmit="return on_new_submit();">
+    <table cellspacing="8" cellpadding="8" style="border-collapse: collapse">
+
+        <caption colspan="2">新增用户</caption>
+
+        <tr class="td-right">
+            <td>用户ID(User ID)*：</td>
+            <td>
+                <input type="text" id="id-userid" onblur="on_userid_blur(this.id)">
+            </td>
+            <td class="td-right">
+                <span id="id-span-userid"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                密码(Password)*：
+            </td>
+            <td>
+                <input type="password" id="id-password" onblur="on_pwd_blur(this.id)">
+            </td>
+            <td class="td-right">
+                <span id="id-span-pwd"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                再次输入密码(Password)*：
+            </td>
+            <td>
+                <input type="password" id="id-repassword" onblur="on_repwd_blur(this.id,'id-password');">
+            </td>
+            <td class="td-right">
+                <span id="id-span-repwd"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                用户全名(Full Name)*：
+            </td>
+            <td>
+                <input type="text" id="id-username" onblur="on_username_blur(this.id);">
+            </td>
+            <td class="td-right">
+                <span id="id-span-username"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>用户界级别(Level)*：</td>
+            <td>
+                <select name="" id="id-level" onchange="on_level_change(this.id)">
+                    <option value="0" selected>请选择...</option>
+                    <option value="1">admin</option>
+                    <option value="2">manager</option>
+                    <option value="3">guest</option>
+                </select>
+            </td>
+            <td class="td-right">
+                <span id="id-span-level"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-right">
+                注：带*为必填项
+            </td>
+            <td class="td-right">
+                <button type="submit" id="id-submit" disabled="disabled">新增</button>
+            </td>
+            <td class="td-right">
+                <span id="id-span-submit"></span>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+
+</html>
